@@ -1,0 +1,9 @@
+name: VerifAFK
+version: '${project.version}'
+main: fr.kenda.verifafk.VerifAFK
+api-version: 1.19
+authors: [ Kenda ]
+description: Plugin de vérification d'AFK
+commands:
+  verif:
+    description: Plugin de verif

@@ -1,0 +1,49 @@
+#prefix du plugin
+prefix: "&c[VerifAFK]"
+
+messages:
+  #Message si la console n'as pas la permission
+  console_no_permission: "%prefix% &cError, console can make this command"
+  #Message si le joueur n'as pas la permission
+  no_permission: "%prefix% &cVous n'avez pas la permission de faire cette commande"
+  #Message si la commande est erroné
+  command_use: "%prefix% &7/verif &c<player/help/confirm>"
+  #Message si le joueur ciblé n'est pas connecté
+  target_offline: "%prefix% &cLe joueur %target% n'est pas connecté"
+  #Message si le joueur se verifie lui-même
+  cannot_verif_yourself: "%prefix% &cVous ne pouvez pas vous vérifier vous-même"
+  #Message si le joueur est déjà en mode de vérification (placeholder: %target% => joueur cible)
+  already_in_verification: "%prefix% &cVous êtes déjà en vérification du joueur %target%. (Merci de faire /verification confirm pour quitter la vérification)"
+  #Message quand le joueur entre en mode de vérification (placeholder: %target% => joueur cible)
+  enter_verification: "%prefix% &aVous entrez en mode de vérification de %target%"
+  #Message lors de la fin de la vérification (placeholder: %target% => joueur cible)
+  verification_end: "%prefix% &aLa vérification du joueur %target% est terminé."
+  #Message lors de la confirmation et fin de la vérification (placeholder: %target% => joueur cible)
+  verification_confirm: "%prefix% &6La vérification du joueur %target% est terminé et confirmer."
+  #Message envoyer au joueur pour sa présence
+  verification_player: "%prefix% &cMerci d'écrire un message pour montrer votre présence"
+  #Message si le joueur n'est pas en mode de vérification
+  not_in_verification: "%prefix% &cVous n'êtes pas en mode de vérification"
+  #Message quand le joueur cible à passer la vérification
+  verification_passed: "%prefix% &6Vous avez passé la vérification."
+  #Affichage du /help
+  help:
+    - "&a========== %prefix% &a=========="
+    - "&e/verif <player>: &fPermet de vérifier un joueur"
+    - "&e/verif help: &fAffiche les commandes d'aides"
+    - "&e/verif confirm: &fPermet de confirmer et de terminer la verification"
+    - "&a========== %prefix% &a=========="
+
+title:
+  title_verif: "%prefix%"
+  subtitle_verif: "&cConfirmer votre présence"
+  title_end: "%prefix%"
+  subtitle_end: "&aPrésence confirmer"
+
+
+permissions:
+  #Permission de la commande
+  verif: "admin.verif"
+
+sound:
+  alert: "block note block pling"
