@@ -2,8 +2,6 @@ package fr.kenda.verifafk;
 
 import fr.kenda.verifafk.managers.CommandManager;
 import fr.kenda.verifafk.managers.EventManager;
-import fr.kenda.verifafk.utils.MessageUtils;
-import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 

@@ -42,7 +42,8 @@ public class MessageUtils {
         }
         return msg;
     }
-    public static Sound getSound(){
+
+    public static Sound getSound() {
         return Sound.valueOf(main.getConfig().getString("sound.alert").toUpperCase().replace(" ", "_"));
     }
 }

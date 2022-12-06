@@ -75,7 +75,7 @@ public class VerifCommand implements CommandExecutor {
         player.sendMessage(MessageUtils.getMessage("enter_verification", "%target%", target.getName()));
         target.sendMessage(MessageUtils.getMessage("verification_player"));
         target.playSound(target.getLocation(), MessageUtils.getSound(), 1, 1);
-        target.sendTitle(MessageUtils.getMessageTitle("title_verif"), MessageUtils.getMessageTitle("subtitle_verif"), 20, Integer.MAX_VALUE, 20);
+        target.sendTitle(MessageUtils.getMessageTitle("title_verif"), MessageUtils.getMessageTitle("subtitle_verif"), 20, 99999, 20);
 
         return true;
     }
